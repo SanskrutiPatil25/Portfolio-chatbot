@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Porfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0ccbd9c5e8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="porfolio/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#chatbox">Chatbot</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Sanskruti<br></span>Patil</h1>
+            </div>
+        </div>
+    </div>
+    <!------------------------about------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="1000118923.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> I’m a web developer and a third-year B.Tech Computer science and Engineering student.
+                        I'm a passionate Web Developer & Designer skilled in HTML, CSS, JavaScript, and responsive
+                        design. I create clean, user-friendly websites that combine functionality with modern
+                        aesthetics.
+                        Let’s connect and build something amazing!</p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android apps</li>
+                            <li><span>UI/UX Design</span><br>Developing Interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android apps</li>
+                            <li><span>UI/UX Design</span><br>Developing Interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2027-Current</span><br>Web Developing Interfaces</li>
+                            <li><span>2023-2027</span><br>B.Tech fron GCOE,Kolhapur</li>
+                            <li><span>2025</span><br>First web development</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------------------------service------------------------------------>
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>As a web designer, I specialize in creating visually striking and user-friendly websites that
+                            reflect my clients' unique identities.
+                            My approach combines aesthetics with functionality, ensuring an intuitive experience across
+                            all devices.
+                            From initial concepts to final launch, I collaborate closely with clients to bring their
+                            visions to life, helping them establish a strong online presence that captivates their
+                            audience.</p>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-gamepad"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>As a UI/UX designer, I turn concepts into intuitive and visually striking interfaces.
+                            I enjoy crafting seamless user journeys that not only look great but also feel natural to
+                            interact with.
+                            From wireframes to polished designs, I focus on usability, aesthetics, and user satisfaction
+                            to deliver meaningful digital experiences.</p>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>App Development</h2>
+                        <p>In app development, I focus on building seamless and innovative applications that enhance
+                            user experiences.
+                            Whether it’s a mobile app or a web app, I leverage the latest technologies to create
+                            solutions tailored to specific needs.
+                            My commitment to functionality and performance ensures that each app I develop not only
+                            meets but exceeds user expectations, standing out in a competitive landscape.</p>
+                        <a href="#">learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--------------------portfolio-------------------------------------->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="wishlistimg.jpeg">
+                        <div class="layer">
+                            <h3>Wishlist App</h3>
+                            <p>A simple and user-friendly app to create, manage, and share personal wishlists. Helps
+                                users keep track of goals, gifts, and to-dos with ease.</p>
+                            <a href="https://github.com/SanskrutiPatil25/Wishlist.git"><i
+                                    class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="medtrack.jpeg">
+                        <div class="layer">
+                            <h3>MedTrack App</h3>
+                            <p>A medicine reminder and tracker app with buzzer alerts and speech notifications. Designed
+                                for patients and caretakers to manage schedules and track daily adherence.</p>
+                            <a href="https://github.com/SanskrutiPatil25/MedTrack.git"><i
+                                    class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="sahyadri.jpeg">
+                        <div class="layer">
+                            <h3>Echoes of Sahyadri web</h3>
+                            <p>A trekking-focused website showcasing forts and trails across the Sahyadri region.
+                                Features details like difficulty, seasons, history, and Google Maps for each
+                                destination.</p>
+                            <a href="https://github.com/SanskrutiPatil25/EchoesOfSahyadri.git"><i
+                                    class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+        <!-- Chatbot Container -->
+        <h2 class="section-title">Talk to my Bot 🤖</h2>
+        <div id="chatbox"></div>
+        <input type="text" id="userInput" placeholder="Ask me anything..." />
+        <div class="chat-actions">
+            <button onclick="sendMessage()">Send</button>
+            <button onclick="startListening()">🎙️ Speak</button>
+            <button onclick="speakBot()">🔊 Speak Reply</button>
+        </div>
+
+        <!-----------------contact------------------>
+        <div id="contact">
+            <div class="container">
+                <div class="row1">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>sanskrutipatil2502@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i>9921563616</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/profile.php?id=61550311444087&mibextid=ZbWKwL"><i
+                                    class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                            <a href="https://www.instagram.com/san.being_san.25?igsh=Njdna2t2OTI5djM1"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a
+                                href="https://www.linkedin.com/in/sanskruti-patil-6663642a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="your_resume.pdf" class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right"></div>
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" id="Your Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright @ San. Made with <i class="fa-solid fa-heart"></i> by Sanskruti Patil</p>
+            </div>
+        </div>
+
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (tablink of tabcontents) {
+                    tablink.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+
+        </script>
+
+        <script>
+
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu() {
+                sidemenu.style.right = "0";
+            }
+            function closemenu() {
+                sidemenu.style.right = "-200px";
+            }
+
+        </script>
+
+        <script>
+            let lastBotReply = ""; // Store the last bot reply
+
+            function appendMessage(sender, message) {
+                const chatbox = document.getElementById("chatbox");
+                const div = document.createElement("div");
+                div.innerHTML = `<strong>${sender}:</strong> ${message}`;
+                chatbox.appendChild(div);
+                chatbox.scrollTop = chatbox.scrollHeight;
+            }
+
+            function sendMessage() {
+                const input = document.getElementById("userInput");
+                const message = input.value.trim();
+                if (!message) return;
+                appendMessage("You", message);
+                input.value = "";
+
+                fetch("/chat", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ message })
+                })
+                    .then(res => res.json())
+                    .then(data => {
+                        appendMessage("Bot", data.response);
+                        lastBotReply = data.response; // Save the reply
+                        // speak(data.response); // Remove this line
+                    });
+            }
+
+            function startListening() {
+                const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+                recognition.lang = "en-US";
+                recognition.start();
+                recognition.onresult = (e) => {
+                    document.getElementById("userInput").value = e.results[0][0].transcript;
+                    sendMessage();
+                };
+            }
+
+            function speak(text) {
+                const utterance = new SpeechSynthesisUtterance(text);
+                speechSynthesis.speak(utterance);
+            }
+
+            function speakBot() {
+                if (lastBotReply) {
+                    speak(lastBotReply);
+                }
+            }
+        </script>
+
+
+</body>
+
+</html>
